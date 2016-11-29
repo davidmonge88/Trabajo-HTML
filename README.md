@@ -1,2 +1,361 @@
-# Trabajo-HTML
-Trabajo HTML
+<!doctype html>
+<html>
+	<head>
+		<title>Manual HTML</title>
+		<meta charset="UTF-8">
+		<meta name="documento Manual de HTML">
+	</head>
+
+	<body>
+
+		<h1><a href="http://www.w3schools.com/html/default.asp">Manual HTML</a></h1>
+		<hr>
+        <section>
+        <header><h2><u>Índice</u><h2></header>
+
+		<ol>
+			<li><a href=#1><h4>¿Qué es HTML?</h4></a></li>
+             <ul href="">
+				<li><h5>Elementos y atributos</h5></li>
+            	<li><h5>Etiquetas</h5></li>
+                	</ul>
+			<li><a href=#2><h4>Partes del documento</h4></a></li>
+			 <ul href="">
+				<li><h5>Definición del documento</h5></li>
+            	<li><h5>Inicio</h5></li>
+                <li><h5>Cabecera</h5></li>
+                <li><h5>Cuerpo</h5></li>
+                	</ul>
+			<li><a href=#3><h4>Secciones del documento</h4></a></li>
+			<li><a href=#5><h4>Agrupación de textos</h4></a></li>
+            <li><a href=#7><h4>Listas</h4></a></li>
+            <ul>
+            	<li><h5>Listas ordenadas</h5></li>
+            	<li><h5>Listas desordenadas</h5></li>
+                <li><h5>Listas de definición</h5></li>
+                </ul>
+			<li><a href=#8><h4>Elementos semánticos del texto</h4></a></li>
+            <ul>
+					<li><h5>Resaltado</h5></li>
+               		<li><h5>Salto de línea</h5></li>
+				</ul>
+			<li><a href=#10><h4>Hiperenlaces</h4></a></li>
+			<li><a href=#11><h4>Imagenes</h4></a></li>
+			<li><a href=#12><h4>Mapa de imagenes</h4></a></li>
+            <li><a href=#13><h4>Símbolos especiales</h4></a></li>
+            <li><a href=#14><h4>Tablas</h4></a></li>
+             		<ul>
+					<li><h5>Resaltado</h5></li>
+               		<li><h5>Salto de línea</h5></li>
+                    </ul>
+        </section>
+        <hr>
+        <br>
+        <image src="http://wpdirecto.com/wp-content/uploads/2015/10/exportar-un-wordpress-a-html-estatico.jpg" width=50%>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <br>
+        <article>
+		<h2><elto id=1>¿Qué es HTML?</elto></h2>
+		<hr>
+        <p>HTML significa "Lenguaje de Marcado de Hypertexto" por sus siglas en ingles "HyperText Markup Language", es un lenguaje que pertenece a la familia de los "lenguajes de marcado" y es utilizado para la elaboración de páginas web. El estándar HTML lo define la W3C (World Wide Web Consortium) y actualmente HTML se encuentra en su versión HTML5.<p>
+        <p>El lenguaje HTML sirve para describir la estructura básica de una página y organizar la forma en que se mostrará su contenido, además de que HTML permite incluir enlaces (links) hacia otras páginas o documentos.</p>
+        <p>HTML es un lenguaje de marcado descriptivo que se escribe en forma de etiquetas para definir elementos con sus atributos y así acotar el texto para darnos la estructura de una página web y su contenido como texto, imágenes, entre otros, de modo que HTML es el encargado de describir la estructura semántica que tendrá la página web.</p>
+        <ul>
+         <li><h3>Elementos</h3></li>
+        <p>Los <b>elementos</b> son la estructura básica de HTML. Los elementos tienen dos propiedades básicas: atributos y contenido. Cada atributo y contenido tiene ciertas restricciones para que se considere válido al documento HTML. Un elemento generalmente tiene una etiqueta de inicio y una etiqueta de cierre.<br>Los <b>atributos</b> del elemento están contenidos en la etiqueta de inicio y el contenido está ubicado entre las dos etiquetas. Ejem: &lttable <b>border=2</b>&gt...<i>contenido...</i>&lt/table&gt
+        <li><h3>Etiquetas</h3></li>
+        <p>Las etiquetas HTML son fragmentos de texto rodeados por corchetes angulares &lt &gt, que se utilizan para escribir código HTML, en HTML existen etiquetas de apertura y etiquetas de cierre, tienen la forma: <b>&ltetiqueta&gt &lt/etiqueta&gt.</b> Donde <i>&ltetiqueta&gt</i> es la etiqueta de apertura y <i>&lt/etiqueta&gt</i> es la etiqueta de cierre indicada por la diagonal. </p>
+       
+        </ul>
+        </article>
+        <hr>
+        <br>
+        <br>
+        <br>
+        <article>
+		<h2><elto id=2>Partes del documento</elto></h2>
+		<hr>
+        <ul>
+        <li><h3>Definición del documento</h3>
+        <dl><dt><b>&lt!doctype html&gt</b></dt> <dd>Define que el documento esta bajo el estandar de HTML 5</dd></dl>
+        <li><h3>Inicio</h3>
+        <dl><dt><b>&lthtml lang="es"&gt</b></dt> <dd>Representa la raíz de un documento HTML o XHTML. Todos los demás elementos deben ser descendientes de este elemento.</dd><dd>El atributo <b>lang</b> nos indica el lenguaje en el que vamos a escribir el contenido del HTML</dd></dl>
+        <li><h3>Cabecera</h3>
+        <dl><dt><b>&lthead&gt...&lt/head&gt</b></dt> <dd>Representa una colección de metadatos acerca del documento, incluyendo enlaces a, o definiciones de, scripts y hojas de estilo.</dd></dl>
+      <dl><dt><b>&lthead&gt<br>&lttitle&gt...&lt/title&gt<br>&lt/head&gt</b></dt> <dd>Define el título del documento, el cual se muestra en la barra de título del navegador o en las pestañas de página. Solamente puede contener texto y cualquier otra etiqueta contenida no será interpretada.</dd></dl>
+       <dl><dt><b>&lthead&gt<br>&lttitle&gt...&lt/title&gt<br>&ltmeta charset="UTF-8"&gt<br>&ltmeta name="trabajo html" content="manual"&gt<br>&lt/head&gt</b></dt> <dd>Define los metadatos que no pueden ser definidos usando otro elemento HTML.</dd></dl>
+        <li><h3>Cuerpo</h3>
+        <dl><dt><b>&ltbody&gt...&lt/body&gt</b></dt> <dd>Representa el contenido principal de un documento HTML. Solo hay un elemento <b>&ltbody&gt</b> en un documento y entre sus etiquetas se contiene todo el cuerpo de nuestro documento HTML.</dd></dl>
+        <pre>
+       <h3>Ejemplo:</h3>
+       
+       <b>&lt!doctype html&gt
+       
+       &lthtml lang="es"&gt
+         
+         &lthead&gt
+         
+        	&lttitle&gt...&lt/title&gt
+         
+        	&ltmeta charset="UTF-8"&gt
+         	&ltmeta name="trabajo html"
+            
+         &lt/head&gt
+         
+         &ltbody&gt
+         ...
+         ...
+         ...
+         ...
+         ...
+         ...
+         ...
+       	 &lt/body&gt
+         
+         &lt/html&gt</b>
+         </pre>
+      	 </ul>        
+        </article>
+        
+        <hr>
+        <br>
+        <br>
+        <br>
+        <article>
+       <h2><elto id=3>Secciones del documento</elto></h2>
+		<hr>
+        <table border=1>
+        <thead>Secciones</thead>
+        <tbody>
+        <tr>
+ 		 <td><b>Cuerpo</b></td>
+ 		 <td>&ltbody&gt...&lt/body&gt</td>
+          <td>Representa el contenido principal de un documento HTML. Solo hay un elemento &ltbody&gt en un documento.</td>
+		</tr>
+         <tr>
+ 		 <td><b>Artículo</b></td>
+ 		 <td>&ltarticle&gt...&lt/article&gt</td>
+ 		 <td>Define contenido autónomo que podría existir independientemente del resto del contenido.</td>
+		</tr>
+         <tr>
+ 		 <td><b>Sección</b></td>
+ 		 <td>&ltsection&gt...&lt/section&gt</td>
+ 		 <td>Define una sección en un documento.</td>
+		</tr>
+         <tr>
+ 		 <td><b>Navegación</b></td>
+ 		 <td>&ltnav&gt...&lt/nav&gt</td>
+ 		 <td>Define una sección que solamente contiene enlaces de navegación.</td>
+		</tr>
+        <tr>
+ 		 <td><b>Inciso</b></td>
+ 		 <td>&ltaside&gt...&lt/aside&gt</td>
+ 		 <td>Define algunos contenidos vagamente relacionados con el resto del contenido de la página. Si es removido, el contenido restante seguirá teniendo sentido.</td>
+		</tr>
+        <tr>
+ 		 <td><b>Títulos</b></td>
+ 		 <td>&lth1&gt,&lth2&gt,<br>&lth3&gt,&lth4&gt,<br>&lth5&gt,&lth6&gt.</td>
+ 		 <td>Los elemento de cabecera  implementan seis niveles de cabeceras de documentos; &lth1&gt es la de mayor y &lth6&gt es la de menor impotancia. Un elemento de cabecera describe brevemente el tema de la sección que introduce.</td>
+		</tr>
+          <tr>
+ 		 <td><b>Encabezamiento</b></td>
+ 		 <td>&ltheader&gt...&lt/header&gt</td>
+ 		 <td>Define la cabecera de una página o sección. Usualmente contiene un logotipo, el título del sitio Web y una tabla de navegación de contenidos.</td>
+		</tr>
+           <tr>
+ 		 <td><b>Pie de página</b></td>
+ 		 <td>&ltfooter&gt...&lt/footer&gt</td>
+ 		 <td>Define el pie de una página o sección. Usualmente contiene un mensaje de derechos de autoría, algunos enlaces a información legal o direcciones para dar información de retroalimentación.</td>
+		</tr>
+           <tr>
+ 		 <td><b>Dirección</b></td>
+ 		 <td>&ltadress&gt...&lt/adress&gt</td>
+ 		 <td>Define una sección que contiene información de contacto.</td>
+		</tr>
+        </tbody>
+        </table>
+          </article>
+        
+        <hr>
+        <br>
+        <br>
+        <br>
+        <article>
+       <h2><elto id=5>Agrupación de textos</elto></h2>
+		<hr>
+        <table border=1>
+        <tr>
+ 		 <td><b>Parrafos</b></td>
+ 		 <td>&ltp&gt...&lt/p&gt</td>
+          <td>Define una parte que debe mostrarse como un párrafo.</td>
+		</tr>
+         <tr>
+ 		 <td><b>Línea horizontal</b></td>
+ 		 <td>&lthr&gt</td>
+ 		 <td>Representa un quiebre temático entre parrafos de una sección o articulo o cualquier contenido.</td>
+		</tr>
+         <tr>
+ 		 <td><b>Texto preformateado</b></td>
+ 		 <td>&ltpre&gt...&lt/pre&gt</td>
+ 		 <td>Indica que su contenido esta preformateado y que este formato debe ser preservado.</td>
+		</tr>
+         <tr>
+ 		 <td><b>Listas</b></td>
+ 		 <td>&ltli&gt...&lt/li&gt</td>
+ 		 <td>Define un artículo de una lista ennumerada.</td>
+		</tr>
+        </table>
+          </article>
+    
+        
+        <hr>
+        <br>
+        <br>
+        <br>
+        <article>
+       <h2><elto id=7>Listas</elto></h2>
+		<hr>
+        <p>Las listas son utilizadas para citar, numerar y definir objetos. También son utilizadas corrientemente para desplazar el comienzo de línea hacia la derecha.
+Podemos distinguir tres tipos de listas:</p>
+<dl>
+<dt><b><u>Listas desordenadas</u></b></dt>
+<dd>Son delimitadas por las etiquetas &ltul&gt y &lt/ul&gt (unordered list). Cada uno de los elementos de la lista es citado por medio de una etiqueta &ltli&gt (sin cierre, aunque no hay inconveniente en colocarlo).
+<ul>
+<li>Argentina <li>Perú <li>Chile
+</ul>
+
+<dt><b><u>Listas ordenadas</u></b>
+<dd>En este caso usaremos las etiquetas &ltol&gt (ordered list) y su cierre. Cada elemento sera igualmente precedido de su etiqueta &ltli&gt.
+<ol type="1">
+<li>Elemento 1
+<li> Elemento 2
+</ol>
+<dt><b><u>Listas de definición</u></b>
+<dd>Cada elemento es presentado junto con su definición. La etiqueta principal es &ltdl&gt y &lt/dl&gt (definition list). La etiquetas del elemento y su definición son &ltdt&gt (definition term) y &ltdd&gt (definition definition) respectivamente.
+</dl>
+<pre>
+<dl>
+		<dt><b>Brujula</b>
+				<dd>Señórula montada en una escóbula
+        <dt><b>Oreja</b>
+				<dd>Sesenta minutejos
+</dl>
+</pre>
+        
+          </article>
+        
+        <hr>
+        <br>
+        <br>
+        <br>
+        <article>
+       <h2><elto id=10>Hiperenlaces</elto></h2>
+		<hr>
+        
+        
+          </article>
+        
+        <hr>
+        <br>
+        <br>
+        <br>
+        <article>
+       <h2><elto id=11>Imagenes</elto></h2>
+		<hr>
+        
+        
+          </article>
+        
+        <hr>
+        <br>
+        <br>
+        <br>
+        <article>
+       <h2><elto id=12>Mapa de imagenes</elto></h2>
+		<hr>
+        
+        
+          </article>
+        
+        <hr>
+        <br>
+        <br>
+        <br>
+        <article>
+       <h2><elto id=13>Símbolos especiales</elto></h2>
+		<hr>
+        
+        
+          </article>
+        
+        <hr>
+        <br>
+        <br>
+        <br>
+        <article>
+       <h2><elto id=14>Tablas</elto></h2>
+		<hr>
+        <h3>Esto es <br>una tabla</h3>
+		<table border=2>
+  			<th>1</th>
+  			<th>2</th>
+  			<th>3</th>
+			<tr>
+  				<td>1.1</td>
+ 				<td>1.2</td>
+  				<td>1.3</td>
+			</tr>
+ 
+<tr>
+  <td>2.1</td>
+  <td>2.2</td>
+  <td>2.3</td>
+</tr>
+ 
+<tr>
+  <td>3.1</td>
+  <td>3.2</td>
+  <td>3.3</td>
+</tr>
+<caption>3X3</caption>
+</table>
+<hr>
+<h3>Esto es <br>una tabla</h3>
+<table border=2>
+<tr>
+  <th>1</th>
+  <th>2</th>
+  <th>3</th>
+</tr>
+ <caption>3X3</caption>
+<tr>
+  <td colspan=2>1.1 y 1.2</td>
+  <td>1.3</td>
+</tr>
+ 
+	<tr>
+ 	 <td>2.1</td>
+ 	 <td>2.2</td>
+	  <td rowspan=2>2.3<br>y<br>3.3</td>
+	</tr>
+
+	<tr>
+	  <td>3.1</td>
+	  <td>3.2</td>
+	</tr>
+	</table>
+	<p>Expandidas columna y fila</p>
+        
+          </article>
+
+		<hr>
+		
+ <footer>
+  <p>>>Manual HTML escrito en lenguaje HTML5 para la asignatura de Lenguaje de Marcas.</p>
+</footer>
+</body>
+</html>
